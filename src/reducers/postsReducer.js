@@ -15,13 +15,13 @@ export default function(state = INIT_STATE, action) {
             return {
                     ...state, 
                     recentPosts
-                   }
+                }
          case SET_RESULTS_POSTS:
                  const resultPosts = action.payload; 
                  return {
-                     ...state,
-                     resultPosts
-                 }     
+                    ...state,
+                    resultPosts
+                }     
         default:
             return state;
     }
